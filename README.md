@@ -198,7 +198,7 @@ kubectl apply -f high-priority-pod.yaml
 
 
 
-All command outputs and observations are captured in the \[screenshots folder](./screenshots/).
+All command outputs and observations are captured in the \*\*\[screenshots/](./screenshots)\*\* folder.
 
 \---
 
