@@ -68,15 +68,15 @@ When the cluster is full:
 
 k8s-preemption-demo/
 
-&#x20;├── namespace.yaml
+├── namespace.yaml
 
-&#x20;├── priority-classes.yaml
+├── priority-classes.yaml
 
-&#x20;├── low-priority-deploy.yaml
+├── low-priority-deploy.yaml
 
-&#x20;├── high-priority-pod.yaml
+├── high-priority-pod.yaml
 
-&#x20;└── README.md
+└── README.md
 
 ```
 
@@ -198,9 +198,7 @@ kubectl apply -f high-priority-pod.yaml
 
 
 
-All command outputs and observations are captured in the \*\*\[screenshots/](./screenshots)\*\* folder.
-
-
+All command outputs and observations are captured in the \[screenshots](./screenshots/) folder.
 
 \---
 
