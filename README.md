@@ -228,22 +228,6 @@ All command outputs and observations are captured in the \*\*\[screenshots/](./s
 
 
 
-\## 🎤 How to Explain in Interview
-
-
-
-> “I filled the cluster with low-priority workloads to simulate resource pressure.
-
-> When I deployed a high-priority Pod, Kubernetes couldn’t schedule it initially.
-
-> So the scheduler triggered preemption, evicted lower-priority Pods, and then successfully scheduled the high-priority Pod.”
-
-
-
-\---
-
-
-
 \## 🔥 Advanced Scenario: Disable Preemption
 
 
