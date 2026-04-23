@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: high-priority-pod
+  namespace: preemption-lab
+spec:
+  priorityClassName: high-priority
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+      requests:
+        cpu: "3000m"
+      limits:
+        cpu: "3000m"

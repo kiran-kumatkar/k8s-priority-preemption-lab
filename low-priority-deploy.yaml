@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: low-priority-app
+  namespace: preemption-lab
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: low-priority-app
+  template:
+    metadata:
+      labels:
+        app: low-priority-app
+    spec:
+      priorityClassName: low-priority
+      containers:
+      - name: stress
+        image: busybox
+        command: ["sh", "-c", "while true; do sleep 30; done"]
+        resources:
+          requests:
+            cpu: "1000m"
+          limits:
+            cpu: "1000m"
